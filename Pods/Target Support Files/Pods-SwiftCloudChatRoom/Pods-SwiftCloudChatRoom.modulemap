@@ -1,0 +1,6 @@
+framework module Pods_SwiftCloudChatRoom {
+  umbrella header "Pods-SwiftCloudChatRoom-umbrella.h"
+
+  export *
+  module * { export * }
+}
