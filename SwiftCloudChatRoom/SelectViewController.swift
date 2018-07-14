@@ -146,7 +146,7 @@ class SelectViewController: UIViewController,CLLocationManagerDelegate,UIImagePi
             }
             
             self.address = self.country + self.administrativeArea + self.subAdministrativeArea
-                + self.locality + self.subLocality + self.subThoroughfare
+                + self.locality + self.subLocality + self.thoroughfare
             
         })}
 
@@ -166,7 +166,7 @@ class SelectViewController: UIViewController,CLLocationManagerDelegate,UIImagePi
             roomVC.uid = uid
             
             self.address = self.country + self.administrativeArea + self.subAdministrativeArea
-                + self.locality + self.subLocality + self.subThoroughfare
+                + self.locality + self.subLocality + self.thoroughfare
             
             roomVC.address = self.address
             

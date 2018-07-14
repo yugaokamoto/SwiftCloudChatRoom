@@ -73,7 +73,8 @@ class RoomsViewController: UIViewController,UITableViewDelegate,UITableViewDataS
                         let country = post["country"] as? String,
                         let administrativeArea = post["administrativeArea"] as? String,
                         let subAdministrativeArea = post["subAdministrativeArea"] as? String,
-                        let locality = post["locality"] as? String, let subLocality = post["subLocality"] as? String,
+                        let locality = post["locality"] as? String,
+                        let subLocality = post["subLocality"] as? String,
                         let thoroughfare = post["thoroughfare"] as? String {
                         
                         self.posst.pathToImage = pathToImage
@@ -88,12 +89,12 @@ class RoomsViewController: UIViewController,UITableViewDelegate,UITableViewDataS
                         self.posst.thoroughfare = thoroughfare
                         self.roomName_Array.append(self.posst.roomName)
                         //比較して入れるものを限る
-//                        if ((self.posst.country + self.posst.administrativeArea + self.posst.subAdministrativeArea
-//                            + self.posst.locality + self.posst.subLocality + self.posst.thoroughfare ) == self.address)
-//                        {
+                        if ((self.posst.country + self.posst.administrativeArea + self.posst.subAdministrativeArea
+                            + self.posst.locality + self.posst.subLocality + self.posst.thoroughfare ) == self.address)
+                        {
                             self.posts.append(self.posst)
                             self.tableView.reloadData()
-//                        }
+                        }
                     }
                     
                 }
